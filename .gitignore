@@ -36,3 +36,7 @@
 !/mqtt-subscriber/mqtt-subscriber.cpp
 !/mqtt-subscriber/mqtt-subscriber.h
 !/mqtt-subscriber/CMakeLists.txt
+
+!README.md
+!testprotokoll.md
+!/docs/

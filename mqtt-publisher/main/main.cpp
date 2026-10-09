@@ -19,7 +19,7 @@ extern "C" void app_main()
         if(distance == -1) {continue;}
         int id = sensor.sensorID();
         const char* unit = sensor.unit();
-        snprintf(payload, sizeof(payload), "{\n\"sensorIdd\":%d,\n\"unit\":\"%s\",\n\"value\":%.2f\n}", id, unit, distance);
+        snprintf(payload, sizeof(payload), "{\n\"sensorrId\":%d,\n\"unit\":\"%s\",\n\"value\":%.2f\n}", id, unit, distance);
 
         mqtt.publish("sensor/distance", payload);
     }
